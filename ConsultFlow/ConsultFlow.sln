@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultFlow.Core.Domain", "ConsultFlow.Core.Domain\ConsultFlow.Core.Domain.csproj", "{D6C58C8C-8215-4C12-B260-6446FDAFA985}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{53B5D201-55C9-434D-B3AB-16E5E70C3756}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{03CFE3C5-B618-4AA0-8CE5-6F4897724CFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{B171D8EA-8332-4825-B54F-62B4C4397A43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{0305AD38-3131-4E3E-AF2D-B622C166EB52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{62910F95-A85A-4A70-9371-E389A65BB1DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{3BC51B60-A5FD-4763-946E-B9CBFD52F9C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C58C8C-8215-4C12-B260-6446FDAFA985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C58C8C-8215-4C12-B260-6446FDAFA985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C58C8C-8215-4C12-B260-6446FDAFA985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C58C8C-8215-4C12-B260-6446FDAFA985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6C58C8C-8215-4C12-B260-6446FDAFA985} = {3BC51B60-A5FD-4763-946E-B9CBFD52F9C7}
+		{B171D8EA-8332-4825-B54F-62B4C4397A43} = {53B5D201-55C9-434D-B3AB-16E5E70C3756}
+		{0305AD38-3131-4E3E-AF2D-B622C166EB52} = {53B5D201-55C9-434D-B3AB-16E5E70C3756}
+		{62910F95-A85A-4A70-9371-E389A65BB1DA} = {53B5D201-55C9-434D-B3AB-16E5E70C3756}
+		{3BC51B60-A5FD-4763-946E-B9CBFD52F9C7} = {62910F95-A85A-4A70-9371-E389A65BB1DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {103AD1C7-B794-418C-ADA9-AF3B045BE1CA}
+	EndGlobalSection
+EndGlobal
