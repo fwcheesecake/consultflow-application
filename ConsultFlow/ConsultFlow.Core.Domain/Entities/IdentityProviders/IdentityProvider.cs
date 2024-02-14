@@ -2,15 +2,15 @@
 {
     public class IdentityProvider
     {
-        public string ProviderId { get; private set; }
-        public string Provider {  get; private set; }
-        public string ProviderName { get; private set; }
+        public string Id { get; private set; }
+        public IdentityProviderType Type {  get; private set; }
+        public string Name { get; private set; }
 
-        public IdentityProvider(string providerId, string provider, string providerName)
+        public IdentityProvider(string id, IdentityProviderType type, string name)
         {
-            ProviderId = providerId;
-            Provider = provider;
-            ProviderName = providerName;
+            Id = id;
+            Type = type;
+            Name = name;
         }
     }
 }
