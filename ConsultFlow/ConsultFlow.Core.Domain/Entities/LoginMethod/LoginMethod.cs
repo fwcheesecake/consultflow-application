@@ -8,6 +8,13 @@ namespace ConsultFlow.Core.Domain.Entities.LoginMethod
         public string IsConfirmed { get; private set; }
         public string ConfirmedAt { get; private set; }
 
+        public LoginMethod(string loginType, string isConfirmed, string confirmedAt)
+        {
+            LoginType = loginType;
+            IsConfirmed = isConfirmed;
+            ConfirmedAt = confirmedAt;
+        }
+
         public void ConfirmLoginMethod() { }
     }
 
