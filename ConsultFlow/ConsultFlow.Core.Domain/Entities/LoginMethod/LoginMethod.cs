@@ -4,13 +4,13 @@ namespace ConsultFlow.Core.Domain.Entities.LoginMethod
 {
     public abstract class LoginMethod
     {
-        public string LoginType { get; private set; }
+        public LoginType Type { get; private set; }
         public bool IsConfirmed { get; private set; }
         public DateTime? ConfirmedAt { get; private set; }
 
-        protected LoginMethod(string loginType, bool isConfirmed, DateTime? confirmedAt)
+        protected LoginMethod(LoginType type, bool isConfirmed, DateTime? confirmedAt)
         {
-            LoginType = loginType;
+            Type = type;
             IsConfirmed = isConfirmed;
             ConfirmedAt = confirmedAt;
         }
@@ -23,7 +23,7 @@ namespace ConsultFlow.Core.Domain.Entities.LoginMethod
         public string Email { get; private set; }
         public string Password { get; private set; }
 
-        public EmailLogin(string loginType, bool isConfirmed, DateTime? confirmedAt, string email, string password) : base (loginType, isConfirmed, confirmedAt)
+        public EmailLogin(LoginType type, bool isConfirmed, DateTime? confirmedAt, string email, string password) : base (type, isConfirmed, confirmedAt)
         {
             Email = email;
             Password = password;
@@ -36,7 +36,7 @@ namespace ConsultFlow.Core.Domain.Entities.LoginMethod
         public string PhoneNumber { get; private set; }
         public string ConfirmationCode { get; private set; }
 
-        public PhoneLogin(string loginType, bool isConfirmed, DateTime? confirmedAt, string phoneNumber, string confirmationCode) : base(loginType, isConfirmed, confirmedAt)
+        public PhoneLogin(LoginType type, bool isConfirmed, DateTime? confirmedAt, string phoneNumber, string confirmationCode) : base(type, isConfirmed, confirmedAt)
         {
             PhoneNumber = phoneNumber;
             ConfirmationCode = confirmationCode;
@@ -48,7 +48,7 @@ namespace ConsultFlow.Core.Domain.Entities.LoginMethod
     public class ExternalLogin: LoginMethod {
         public IdentityProvider IdentityProvider { get; private set; }
 
-        public ExternalLogin(string loginType, bool isConfirmed, DateTime? confirmedAt, IdentityProvider identityProvider) : base(loginType, isConfirmed, confirmedAt)
+        public ExternalLogin(LoginType type, bool isConfirmed, DateTime? confirmedAt, IdentityProvider identityProvider) : base(type, isConfirmed, confirmedAt)
         {
             IdentityProvider = identityProvider;
         }
