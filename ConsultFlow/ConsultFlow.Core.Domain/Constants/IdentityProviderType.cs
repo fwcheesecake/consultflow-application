@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsultFlow.Core.Domain.Constants
 {
-    public class IdentityProviders
+    public enum IdentityProviderType
     {
-        public const string Local = "Local";
+        LOCAL = 1
     }
 }
