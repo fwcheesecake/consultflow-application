@@ -8,7 +8,7 @@ namespace ConsultFlow.Core.Domain.Entities.User
         public string LastName { get; private set; }
         public string FullName { get => $"{FirstName} {LastName}"; }
 
-        public readonly List<LoginMethod.LoginMethod> loginMethods;
+        public List<LoginMethod.LoginMethod> loginMethods { get; private set }
 
         public User(Guid id, string firstName, string lastName, List<LoginMethod.LoginMethod> loginMethods)
         {
