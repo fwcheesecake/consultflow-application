@@ -2,6 +2,6 @@
 {
     public enum IdentityProviderType
     {
-        LOCAL = 1
+        Local = 1
     }
 }
